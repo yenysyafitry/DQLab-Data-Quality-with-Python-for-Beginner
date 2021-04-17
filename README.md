@@ -1,4 +1,4 @@
-### Importing Data](https://academy.dqlab.id/main/livecode/166/322/1513)
+### Importing Data 
 
 ```plantuml
 import pandas as pd
@@ -13,11 +13,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/322/1513">Link materi : academy.dqlab.id/main/livecode/166/322/1513</a>
 
 ----
 
-### Inspeksi tipe data](https://academy.dqlab.id/main/livecode/166/322/1514)
+### Inspeksi tipe data 
 
 ```plantuml
 #Cetak tipe data di setiap kolom retail_raw
@@ -30,10 +30,10 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/322/1514">Link materi : academy.dqlab.id/main/livecode/166/322/1514</a>
 
 ----
-### Descriptive Statistics - Part 1](https://academy.dqlab.id/main/livecode/166/322/1515)
+### Descriptive Statistics - Part 1 
  ```plantuml
 # Kolom city
 length_city = len(retail_raw['city'])
@@ -50,10 +50,10 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/322/1515">Link materi : academy.dqlab.id/main/livecode/166/322/1515</a>
 
 ----
-### Descriptive Statistics - Part 2](https://academy.dqlab.id/main/livecode/166/322/1517)
+### Descriptive Statistics - Part 2 
  ```plantuml
 # Count kolom city
 count_city = retail_raw['city'].count()
@@ -69,11 +69,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/322/1517">Link materi : academy.dqlab.id/main/livecode/166/322/1517</a>
 
 ----
 
-### Descriptive Statistics - Part 3](https://academy.dqlab.id/main/livecode/166/322/1519)
+### Descriptive Statistics - Part 3 
  ```plantuml
 # Missing value pada kolom city
 number_of_missing_values_city = length_city - count_city
@@ -93,11 +93,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/322/1519">Link materi : academy.dqlab.id/main/livecode/166/322/1519</a>
 
 ----
 
-### Descriptive Statistics - Part 4](https://academy.dqlab.id/main/livecode/166/322/1521)
+### Descriptive Statistics - Part 4 
  ```plantuml
 #Deskriptif statistics kolom quantity
 print('Kolom quantity')
@@ -123,11 +123,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/322/1521">Link materi : academy.dqlab.id/main/livecode/166/322/1521</a>
 
 ----
 
-### Descriptive Statistics - Part 5](https://academy.dqlab.id/main/livecode/166/322/1523)
+### Descriptive Statistics - Part 5 
 ```plantuml 
 # Quantile statistics kolom quantity
 print('Kolom quantity:')
@@ -144,11 +144,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/322/1523">Link materi : academy.dqlab.id/main/livecode/166/322/1523</a>
 
 ----
 
-### Descriptive Statistics - Part 6](https://academy.dqlab.id/main/livecode/166/322/1526)
+### Descriptive Statistics - Part 6 
  ```plantuml
 print('Korelasi quantity dengan item_price')
 print(retail_raw[['quantity', 'item_price']].corr())
@@ -159,11 +159,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/322/1526">Link materi : academy.dqlab.id/main/livecode/166/322/1526</a>
 
 ----
 
-### Missing Data](https://academy.dqlab.id/main/livecode/166/323/1529)
+### Missing Data 
  ```plantuml
 # Check kolom yang memiliki missing data
 print('Check kolom yang memiliki missing data:')
@@ -183,11 +183,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/323/1529">Link materi : academy.dqlab.id/main/livecode/166/323/1529</a>
 
 ----
 
-### Tugas Praktek](https://academy.dqlab.id/main/livecode/166/323/1530)
+### Tugas Praktek 
 ```plantuml 
 print(retail_raw['item_price'].fillna(retail_raw['item_price'].mean()))
 ```
@@ -197,11 +197,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/323/1530">Link materi : academy.dqlab.id/main/livecode/166/323/1530</a>
 
 ----
 
-### Outliers](https://academy.dqlab.id/main/livecode/166/323/1534)
+### Outliers 
  ```plantuml
 # Q1, Q3, dan IQR
 Q1 = retail_raw['quantity'].quantile(0.25)
@@ -223,11 +223,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/323/1534">Link materi : academy.dqlab.id/main/livecode/166/323/1534</a>
 
 ----
 
-### Tugas Praktek](https://academy.dqlab.id/main/livecode/166/323/1535)
+### Tugas Praktek 
 ```plantuml 
 #Q1, Q3, dan IQR
 Q1 = retail_raw['item_price'].quantile(0.25)
@@ -249,11 +249,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/323/1535">Link materi : academy.dqlab.id/main/livecode/166/323/1535</a>
 
 ----
 
-### Tugas Praktek](https://academy.dqlab.id/main/livecode/166/323/1537)
+### Tugas Praktek 
 ```plantuml 
 # Check ukuran (baris dan kolom) sebelum data duplikasi dibuang
 print('Shape awal: ', retail_raw.shape)
@@ -270,11 +270,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/323/1537">Link materi : academy.dqlab.id/main/livecode/166/323/1537</a>
 
 ----
 
-### Case Studi: Data Profiling](https://academy.dqlab.id/main/livecode/166/324/1532)
+### Case Studi: Data Profiling 
 ```plantuml 
 #Baca dataset uncleaned_raw.csv
 uncleaned_raw = pd.read_csv('https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/uncleaned_raw.csv')
@@ -312,11 +312,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/324/1532">Link materi : academy.dqlab.id/main/livecode/166/324/1532</a>
 
 ----
 
-### Case Study: Data Cleansing - Part 1](https://academy.dqlab.id/main/livecode/166/324/2602)
+### Case Study: Data Cleansing - Part 1 
 ```plantuml 
 import matplotlib.pyplot as plt
 
@@ -330,11 +330,11 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/324/2602">Link materi : academy.dqlab.id/main/livecode/166/324/2602</a>
 
 ----
 
-### Case Study: Data Cleansing - Part 2](https://academy.dqlab.id/main/livecode/166/324/2603)
+### Case Study: Data Cleansing - Part 2 
 ```plantuml 
 #Check IQR
 Q1 = uncleaned_raw['UnitPrice'].quantile(0.25)
@@ -357,6 +357,6 @@ Aksara, Usia: 25, Pendapatan 8500000</br>
 Senja, Usia: 28, Pendapatan 12500000	
 </details>
 </br>
-<a href="https://academy.dqlab.id/main/livecode/161/301/1355">Link materi : academy.dqlab.id/main/livecode/161/301/1355</a>
+<a href="https://academy.dqlab.id/main/livecode/166/324/2603">Link materi : academy.dqlab.id/main/livecode/166/324/2603</a>
 
 ----
