@@ -325,3 +325,6 @@ uncleaned_raw = uncleaned_raw.drop_duplicates()
 <a href="https://academy.dqlab.id/main/livecode/166/324/2603">Link materi : academy.dqlab.id/main/livecode/166/324/2603</a>
 
 ----
+
+
+<p align="justify">Yuk belajar data science bersama DQLab dengan daftarkan diri kamu dengan signup di dqlab.id. Dapatkan potongan 10% dengan menggunakan link referral ini  ! <a href="https://dqlab.id/signup?referralCode=YENN3520"> Klik Gabung </a> </p>
