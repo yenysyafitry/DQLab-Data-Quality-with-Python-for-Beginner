@@ -24,17 +24,18 @@ print(retail_raw.dtypes)
 |Output : |
 | :--     | 
 | <img src="https://github.com/yenysyafitry/DQLab-Data-Quality-with-Python-for-Beginner/blob/main/Screenshot_1.jpg">|
+
 </br>
 <a href="https://academy.dqlab.id/main/livecode/166/322/1514">Link materi : academy.dqlab.id/main/livecode/166/322/1514</a>
 
 ----
 
 ### Descriptive Statistics - Part 1 
+
  ```plantuml
 #Kolom city
 length_city = len(retail_raw['city'])
 print('Length kolom city:', length_city)
-
 #Tugas Praktek: Kolom product_id
 length_product_id = len(retail_raw['product_id'])
 print('Length kolom product_id:', length_product_id)
@@ -43,6 +44,7 @@ print('Length kolom product_id:', length_product_id)
 |Output : |
 | :--     | 
 | <img src="https://github.com/yenysyafitry/DQLab-Data-Quality-with-Python-for-Beginner/blob/main/Screenshot_2.jpg">|
+
 </br>
 <a href="https://academy.dqlab.id/main/livecode/166/322/1515">Link materi : academy.dqlab.id/main/livecode/166/322/1515</a>
 
@@ -50,6 +52,7 @@ print('Length kolom product_id:', length_product_id)
 
 ### Descriptive Statistics - Part 2 
 <p align="justify">Fungsi count menghitung jumlah pengamatan non-NA / non-null dalam suatu series / column. Fungsi len akan hanya menghitung elemen dari kolom yang mempunyai nilai (exclude missing value).</p>
+ 
  ```plantuml
 # Count kolom city
 count_city = retail_raw['city'].count()
@@ -59,9 +62,11 @@ print('Count kolom count_city:', count_city)
 count_product_id = retail_raw['product_id'].count()
 print('Count kolom product_id:', count_product_id)
 ```
+
 |Output : |
 | :--     | 
 | <img src="https://github.com/yenysyafitry/DQLab-Data-Quality-with-Python-for-Beginner/blob/main/Screenshot_3.jpg">|
+
 </br>
 <a href="https://academy.dqlab.id/main/livecode/166/322/1517">Link materi : academy.dqlab.id/main/livecode/166/322/1517</a>
 
@@ -69,28 +74,31 @@ print('Count kolom product_id:', count_product_id)
 
 ### Descriptive Statistics - Part 3 
 <p align="justify">Dengan Length dan Count, sekarang dapat menghitung jumlah missing-value. Jumlah nilai yang hilang adalah perbedaan antara Length dan Count.</p>
+ 
  ```plantuml
 #Missing value pada kolom city
 number_of_missing_values_city = length_city - count_city
 float_of_missing_values_city = float(number_of_missing_values_city/length_city)
 pct_of_missing_values_city = '{0:.1f}%'.format(float_of_missing_values_city * 100)
 print('Persentase missing value kolom city:', pct_of_missing_values_city)
-
 #Tugas praktek: Missing value pada kolom product_id
 number_of_missing_values_product_id = length_product_id - count_product_id
 float_of_missing_values_product_id = float(number_of_missing_values_product_id/length_product_id)
 pct_of_missing_values_product_id = '{0:.1f}%'.format(float_of_missing_values_product_id * 100)
 print('Persentase missing value kolom product_id:', pct_of_missing_values_product_id)
 ```
+
 |Output : |
 | :--     | 
 | <img src="https://github.com/yenysyafitry/DQLab-Data-Quality-with-Python-for-Beginner/blob/main/Screenshot_4.jpg">|
+
 </br>
 <a href="https://academy.dqlab.id/main/livecode/166/322/1519">Link materi : academy.dqlab.id/main/livecode/166/322/1519</a>
 
 ----
 
 ### Descriptive Statistics - Part 4 
+ 
  ```plantuml
 #Deskriptif statistics kolom quantity
 print('Kolom quantity')
@@ -100,7 +108,6 @@ print('Mean value: ', retail_raw['quantity'].mean())
 print('Mode value: ', retail_raw['quantity'].mode())
 print('Median value: ', retail_raw['quantity'].median())
 print('Standard Deviation value: ', retail_raw['quantity'].std())
-
 #Tugas praktek: Deskriptif statistics kolom item_price
 print('')
 print('Kolom item_price')
@@ -110,20 +117,22 @@ print('Mean value: ', retail_raw['item_price'].mean())
 print('Median value: ', retail_raw['item_price'].median())
 print('Standard Deviation value: ', retail_raw['item_price'].std())
 ```
+
 |Output : |
 | :--     | 
 | <img src="https://github.com/yenysyafitry/DQLab-Data-Quality-with-Python-for-Beginner/blob/main/Screenshot_5.jpg">|
+
 </br>
 <a href="https://academy.dqlab.id/main/livecode/166/322/1521">Link materi : academy.dqlab.id/main/livecode/166/322/1521</a>
 
 ----
 
 ### Descriptive Statistics - Part 5 
+
 ```plantuml 
 # Quantile statistics kolom quantity
 print('Kolom quantity:')
 print(retail_raw['quantity'].quantile([0.25, 0.5, 0.75]))
-
 # Tugas praktek: Quantile statistics kolom item_price
 print('')
 print('Kolom item_price:')
@@ -133,6 +142,7 @@ print(retail_raw['item_price'].quantile([0.25, 0.5, 0.75]))
 |Output : |
 | :--     | 
 | <img src="https://github.com/yenysyafitry/DQLab-Data-Quality-with-Python-for-Beginner/blob/main/Screenshot_6.jpg">|
+
 </br>
 <a href="https://academy.dqlab.id/main/livecode/166/322/1523">Link materi : academy.dqlab.id/main/livecode/166/322/1523</a>
 
@@ -140,7 +150,8 @@ print(retail_raw['item_price'].quantile([0.25, 0.5, 0.75]))
 
 ### Descriptive Statistics - Part 6 
 <p align="justify">Korelasi adalah cara yang tepat untuk menemukan hubungan antara variabel numerik. Koefisien korelasi berkisar antara -1 hingga 1. Korelasi 1 adalah korelasi positif total, korelasi -1 adalah korelasi negatif total dan korelasi 0 adalah korelasi non-linear.</p>
- ```plantuml
+
+```plantuml
 print('Korelasi quantity dengan item_price')
 print(retail_raw[['quantity', 'item_price']].corr())
 ```
@@ -148,13 +159,15 @@ print(retail_raw[['quantity', 'item_price']].corr())
 |Output : |
 | :--     | 
 |<img src="https://github.com/yenysyafitry/DQLab-Data-Quality-with-Python-for-Beginner/blob/main/Screenshot_7.jpg">|
+
 </br>
 <a href="https://academy.dqlab.id/main/livecode/166/322/1526">Link materi : academy.dqlab.id/main/livecode/166/322/1526</a>
 
 ----
 
 ### Missing Data 
- ```plantuml
+
+```plantuml
 #Check kolom yang memiliki missing data
 print('Check kolom yang memiliki missing data:')
 print(retail_raw.isnull().any())
@@ -167,28 +180,34 @@ print(retail_raw['quantity'].fillna(retail_raw['quantity'].mean()))
 print('\nDrop missing value:')
 print(retail_raw['quantity'].dropna())
 ```
+
 |Output : |
 | :--     | 
 | <img src="https://github.com/yenysyafitry/DQLab-Data-Quality-with-Python-for-Beginner/blob/main/download.png">|
+
 </br>
 <a href="https://academy.dqlab.id/main/livecode/166/323/1529">Link materi : academy.dqlab.id/main/livecode/166/323/1529</a>
 
 ----
 
 ### Tugas Praktek 
+
 ```plantuml 
 print(retail_raw['item_price'].fillna(retail_raw['item_price'].mean()))
 ```
+
 |Output : |
 | :--     | 
 |<img src="https://github.com/yenysyafitry/DQLab-Data-Quality-with-Python-for-Beginner/blob/main/download (1).png">|
+
 </br>
 <a href="https://academy.dqlab.id/main/livecode/166/323/1530">Link materi : academy.dqlab.id/main/livecode/166/323/1530</a>
 
 ----
 
 ### Outliers 
- ```plantuml
+
+```plantuml
 #Q1, Q3, dan IQR
 Q1 = retail_raw['quantity'].quantile(0.25)
 Q3 = retail_raw['quantity'].quantile(0.75)
@@ -203,15 +222,18 @@ retail_raw = retail_raw[~((retail_raw['quantity'] < (Q1 - 1.5 * IQR)) | (retail_
 #Check ukuran (baris dan kolom) setelah data yang outliers dibuang
 print('Shape akhir: ', retail_raw.shape)
 ```
+
 |Output : |
 | :--     | 
 |<img src="https://github.com/yenysyafitry/DQLab-Data-Quality-with-Python-for-Beginner/blob/main/Screenshot_8.jpg">|
+
 </br>
 <a href="https://academy.dqlab.id/main/livecode/166/323/1534">Link materi : academy.dqlab.id/main/livecode/166/323/1534</a>
 
 ----
 
 ### Tugas Praktek 
+
 ```plantuml 
 #Q1, Q3, dan IQR
 Q1 = retail_raw['item_price'].quantile(0.25)
@@ -234,6 +256,7 @@ print('Shape akhir: ', retail_raw.shape)
 ----
 
 ### Tugas Praktek 
+
 ```plantuml 
 #Check ukuran (baris dan kolom) sebelum data duplikasi dibuang
 print('Shape awal: ', retail_raw.shape)
@@ -251,6 +274,7 @@ print('Shape akhir: ', retail_raw.shape)
 ----
 
 ### Case Studi: Data Profiling 
+
 ```plantuml 
 #Baca dataset uncleaned_raw.csv
 uncleaned_raw = pd.read_csv('https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/uncleaned_raw.csv')
@@ -283,13 +307,13 @@ print('Persentase missing value kolom Quantity:', pct_of_missing_values_qty)
 uncleaned_raw['Quantity'] = uncleaned_raw['Quantity'].fillna(uncleaned_raw['Quantity'].mean())
 ```
 
-
 </br>
 <a href="https://academy.dqlab.id/main/livecode/166/324/1532">Link materi : academy.dqlab.id/main/livecode/166/324/1532</a>
 
 ----
 
 ### Case Study: Data Cleansing - Part 1 
+
 ```plantuml 
 import matplotlib.pyplot as plt
 
@@ -304,6 +328,7 @@ plt.show()
 ----
 
 ### Case Study: Data Cleansing - Part 2 
+
 ```plantuml 
 #Check IQR
 Q1 = uncleaned_raw['UnitPrice'].quantile(0.25)
@@ -327,4 +352,6 @@ uncleaned_raw = uncleaned_raw.drop_duplicates()
 ----
 
 
-<p align="justify">Yuk belajar data science bersama DQLab dengan daftarkan diri kamu dengan signup di dqlab.id. Dapatkan potongan 10% dengan menggunakan link referral ini  ! <a href="https://dqlab.id/signup?referralCode=YENN3520"> Klik Gabung </a> </p>
+<p align="justify">Yuk belajar data science bersama DQLab dengan daftarkan diri kamu dengan signup di dqlab.id. Dapatkan potongan 10% dengan menggunakan link referral ini  ! <a href="https://dqlab.id/signup?referralCode=YENN3520"> Klik Gabung </a> </p></br>
+
+<p align="center"><b>E-Sertifikat </b></br><img src="https://github.com/yenysyafitry/DQLab-Data-Quality-with-Python-for-Beginner/blob/main/e-sertifikat.jpg"></p>
